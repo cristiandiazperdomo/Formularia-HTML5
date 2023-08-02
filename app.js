@@ -9,7 +9,7 @@ const getData = () => {
 
     for (let i = 0; i < inputs.length; i++) {
         if (inputs[i].value == "") {
-            inputs[i].classList.add("bg-danger");
+            inputs[i].classList.replace("bg-light", "bg-danger");
             isFormCompleted = false;
         } else {
             inputs[i].classList.replace("bg-danger", "bg-light");
