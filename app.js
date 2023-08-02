@@ -5,8 +5,6 @@ const getData = () => {
 
     // CHECKING IF CONTROLS FORMS ARE EMPTY
 
-    console.log(inputs);
-
     for (let i = 0; i < inputs.length; i++) {
         if (inputs[i].value == "") {
             inputs[i].classList.add("bg-danger");
