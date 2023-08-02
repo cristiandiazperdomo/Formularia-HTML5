@@ -9,10 +9,12 @@ const getData = () => {
 
     for (let i = 0; i < inputs.length; i++) {
         if (inputs[i].value == "") {
-            inputs[i].classList.replace("bg-light", "bg-danger");
+            inputs[i].classList.add("bg-danger");
+            inputs[i].classList.contains("bg-light") && inputs[i].classList.remove("bg-light");
             isFormCompleted = false;
         } else {
-            inputs[i].classList.replace("bg-danger", "bg-light");
+            inputs[i].classList.add("bg-light");
+            inputs[i].classList.contains("bg-danger") && inputs[i].classList.remove("bg-danger");
         }
     }
 
